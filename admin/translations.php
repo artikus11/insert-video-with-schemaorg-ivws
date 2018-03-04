@@ -9,8 +9,8 @@ function artabr_ivs_button_translation() {
 	$strings    = array(
 		'ivs_title'                                   => __( 'Add video this microdata', 'ivs-shortcode' ),
 		'ivs_title_section_video'                     => __( 'Add video', 'ivs-shortcode' ),
-		'ivs_add_video_id'                            => __( 'ID video', 'ivs-shortcode' ),
-		'ivs_add_video_id_tooltip'                    => __( 'Add video ID. This is the last 11 characters in a link.', 'ivs-shortcode' ),
+		'ivs_add_video_id'                            => __( 'URL video', 'ivs-shortcode' ),
+		'ivs_add_video_id_tooltip'                    => __( 'Add a link to the video in the format https://www.youtube.com/watch?v=Rt0nIManqrQ', 'ivs-shortcode' ),
 		'ivs_add_video_width'                         => __( 'Width player', 'ivs-shortcode' ),
 		'ivs_add_video_width_tooltip'                 => __( 'Specify the width of the window video player', 'ivs-shortcode' ),
 		'ivs_add_video_height'                        => __( 'Height player', 'ivs-shortcode' ),

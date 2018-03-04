@@ -13,6 +13,7 @@
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
@@ -61,8 +62,8 @@ function artabr_ivs_youtube_video( $atts) {
 		'urlvideo'    => '',
 		'namevideo'   => '',
 		'desc'        => '',
-		'durationmin' => '3',
-		'durationsec' => '3',
+		'durationmin' => '',
+		'durationsec' => '',
 		'upld'        => '',
 		'display'     => 'none',
 		'wvideo'      => 1280,
@@ -85,13 +86,13 @@ function artabr_ivs_youtube_video( $atts) {
 		'controls' => 0,
 		'showinfo' => 0,
 	);
-	if ( false == esc_html( $atts['related'] ) ) {
+	if ( true == esc_html( $atts['related'] ) ) {
 		unset( $video_url_params['rel'] );
 	}
-	if ( false == esc_html( $atts['control'] ) ) {
+	if ( true == esc_html( $atts['control'] ) ) {
 		unset( $video_url_params['controls'] );
 	}
-	if ( false == esc_html( $atts['showinfo'] ) ) {
+	if ( true == esc_html( $atts['showinfo'] ) ) {
 		unset( $video_url_params['showinfo'] );
 	}
 	$video_url      = esc_url( add_query_arg( $video_url_params, esc_url_raw( $youtube_url ) ) );
