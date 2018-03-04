@@ -40,12 +40,6 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. You can see '+' button on post editor, using this button, you can add shortcodes in your posts.
 
-== Frequently asked questions ==
-
-= A question that someone might have =
-
-An answer to that question.
-
 == Screenshots ==
 
 1. Rich snippet in Yandex
