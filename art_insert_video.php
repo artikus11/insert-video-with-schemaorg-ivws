@@ -56,52 +56,56 @@ function artabr_ivs_add_admin_style_script(){
  */
 add_shortcode('art_yt', 'artabr_ivs_youtube_video');
 function artabr_ivs_youtube_video( $atts) {
-	$atts = shortcode_atts( array(
-		'id' => '',
-		'urlvideo' => '',
-		'namevideo' => '',
-		'desc' => '',
+	$atts             = shortcode_atts( array(
+		'id'          => '',
+		'urlvideo'    => '',
+		'namevideo'   => '',
+		'desc'        => '',
 		'durationmin' => '3',
 		'durationsec' => '3',
-		'upld' => '',
-		'isFamilyFriendly' => 'true',
-		'display' => 'none',
-		'wvideo' => 1280,
-		'hvideo' => 720,
-		'position'   => 'left',
-		'related' => true,
-		'control' => false,
-		'showinfo' => false
-	), $atts, 'art_yt');
+		'upld'        => '',
+		'display'     => 'none',
+		'wvideo'      => 1280,
+		'hvideo'      => 720,
+		'position'    => 'left',
+		'related'     => false,
+		'control'     => false,
+		'showinfo'    => false,
+	), $atts, 'art_yt' );
 	$video_id         = esc_html( $atts['id'] );
-	$video_title      = addcslashes(htmlspecialchars($atts['namevideo']), '\34');
+	$video_title      = addcslashes( htmlspecialchars( $atts['namevideo'] ), '\34' );
 	$video_desc       = esc_html( $atts['desc'] );
-	$video_duration   = 'PT'.esc_html($atts['durationmin']).'M'.esc_html($atts['durationsec']).'S';
-	$video_wvideo      = esc_html( $atts['wvideo'] );
-	$video_hvideo      = esc_html( $atts['hvideo'] );
+	$video_duration   = 'PT' . esc_html( $atts['durationmin'] ) . 'M' . esc_html( $atts['durationsec'] ) . 'S';
+	$video_wvideo     = esc_html( $atts['wvideo'] );
+	$video_hvideo     = esc_html( $atts['hvideo'] );
 	$video_upld       = esc_html( $atts['upld'] );
-	$youtube_url = 'https://www.youtube.com/watch?v=' . $video_id;
-	$video_related      = true === esc_html( $atts['related'] ) ? '0' : '';
-	$video_control     = true === esc_html( $atts['control'] )  ? '0' : '';
-	$video_showinfo      = true === esc_html( $atts['showinfo'] ) ? '0' : '';
+	$youtube_url      = 'https://www.youtube.com/embed/' . $video_id;
 	$video_url_params = array(
-		'rel'     => $video_related,
-		'controls'    => $video_control,
-		'showinfo' => $video_showinfo,
+		'rel'      => 0,
+		'controls' => 0,
+		'showinfo' => 0,
 	);
-	$video_url = add_query_arg( $video_url_params, esc_url_raw( $youtube_url ) );
-
-	$video_position       = esc_html( $atts['position'] );
-	switch ($video_position){
+	if ( false == esc_html( $atts['related'] ) ) {
+		unset( $video_url_params['rel'] );
+	}
+	if ( false == esc_html( $atts['control'] ) ) {
+		unset( $video_url_params['controls'] );
+	}
+	if ( false == esc_html( $atts['showinfo'] ) ) {
+		unset( $video_url_params['showinfo'] );
+	}
+	$video_url      = esc_url( add_query_arg( $video_url_params, esc_url_raw( $youtube_url ) ) );
+	$video_position = esc_html( $atts['position'] );
+	switch ( $video_position ) {
 		case 'left';
 			$video_position = 'ivs-left';
-		break;
+			break;
 		case 'right';
 			$video_position = 'ivs-right';
-		break;
+			break;
 		case 'center';
 			$video_position = 'ivs-center';
-		break;
+			break;
 	}
 	$out = '<div class="art_yt '. $video_position .'" itemscope itemid="" itemtype="http://schema.org/VideoObject">
 	<link itemprop="url" href="https://www.youtube.com/watch?v='. $video_id . '">

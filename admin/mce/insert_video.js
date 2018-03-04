@@ -160,7 +160,7 @@
                             alert(editor.getLang('art_insert_yt.ivs_video_id_alert'));
                             return false;
                         }
-                        var related = e.data.related === false ? 'related="' + e.data.related + '"' : '' ;
+                        var related = e.data.related === true ? 'related="' + e.data.related + '"' : '' ;
                         var control = e.data.control === true ? 'control="' + e.data.control + '"' : '' ;
                         var showinfo = e.data.showinfo === true ? 'showinfo="' + e.data.showinfo + '"' : '' ;
 
