@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: IVS\n"
+"POT-Creation-Date: 2018-02-27 21:38+0400\n"
+"PO-Revision-Date: 2018-02-27 21:39+0400\n"
+"Last-Translator: Абрамович Артем | artabr.ru <artikus.sol@gmail.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/translations.php:10
+msgid "Add video this microdata"
+msgstr "Вставить видео с микроразметкой"
+
+#: admin/translations.php:11
+msgid "Add video"
+msgstr "Добавить видео"
+
+#: admin/translations.php:12
+msgid "ID video"
+msgstr "ID видео"
+
+#: admin/translations.php:13
+msgid "Add video ID. This is the last 11 characters in a link."
+msgstr "Укажите ID видео. Это последние 11 символов в ссылке."
+
+#: admin/translations.php:14
+msgid "Width player"
+msgstr "Ширина видеоплеера"
+
+#: admin/translations.php:15
+msgid "Specify the width of the window video player"
+msgstr "Укажите ширину видеоплеера"
+
+#: admin/translations.php:16
+msgid "Height player"
+msgstr "Высота видеоплеера"
+
+#: admin/translations.php:17
+msgid "Specify the height of the window video player"
+msgstr "Укажите высоту видеоплеера"
+
+#: admin/translations.php:18
+msgid "Alignment video"
+msgstr "Выравнивание видео"
+
+#: admin/translations.php:19
+msgid ""
+"Alignment on the page video player window: left, center, right on the edge."
+msgstr ""
+"Выравнивание видео на страницы: по центру, по левому краю, по правому краю."
+
+#: admin/translations.php:20
+msgid "Align center"
+msgstr "Выровнять по центру"
+
+#: admin/translations.php:21
+msgid "Align left"
+msgstr "Выровнять по левому краю"
+
+#: admin/translations.php:22
+msgid "Align right"
+msgstr "Выровнять по правому краю"
+
+#: admin/translations.php:23
+msgid "Add microdata"
+msgstr "Данные для микроразметки"
+
+#: admin/translations.php:24
+msgid "Url video"
+msgstr "Ссылка видео"
+
+#: admin/translations.php:25
+msgid "Add url video. eg https://www.youtube.com/watch?v=HPwH0yS1c44"
+msgstr "Ссылка на видео, например https://www.youtube.com/watch?v=HPwH0yS1c44"
+
+#: admin/translations.php:26
+msgid "Video title"
+msgstr "Заголовок"
+
+#: admin/translations.php:27
+msgid "Specify the video title"
+msgstr "Укажите название видео"
+
+#: admin/translations.php:28
+msgid "Description of video"
+msgstr "Описание видео"
+
+#: admin/translations.php:29
+msgid "Specify the video description of movie"
+msgstr "Укажите описание к видео. Это обязательный параметр"
+
+#: admin/translations.php:30
+msgid "Video duration"
+msgstr "Длительность"
+
+#: admin/translations.php:31
+msgid "Specify the duration of the video in ISO 8601 format"
+msgstr "Укажите длительность видео в формате ISO 8601"
+
+#: admin/translations.php:32
+msgid "Minutes"
+msgstr "Минуты"
+
+#: admin/translations.php:33
+msgid "Seconds"
+msgstr "Секунды"
+
+#: admin/translations.php:34
+msgid "Download date video"
+msgstr "Дата загрузки видео"
+
+#: admin/translations.php:35
+msgid ""
+"Move the cursor to select the date, and download video clips. The desired "
+"format will be installed automatically."
+msgstr ""
+"Установите курсор в поле даты и выберите дату загрузки видео. Нужный формат "
+"установиться автоматически."
+
+#: admin/translations.php:36
+msgid "Link to the thumbnail"
+msgstr "Ссылка на значок"
+
+#: admin/translations.php:37
+msgid "Enter a link to a thumbnail from the video."
+msgstr "Введите ссылку на значок из видео"
+
+#: admin/translations.php:38
+msgid "Width thumbnail"
+msgstr "Ширина значка"
+
+#: admin/translations.php:39
+msgid "Enter the width of a thumbnail from the video"
+msgstr "Введите ширину из видео"
+
+#: admin/translations.php:40
+msgid "Height thumbnail"
+msgstr "Высота значка"
+
+#: admin/translations.php:41
+msgid "Enter the height of a thumbnail from the video"
+msgstr "Введите высоту значка из видео"
+
+#: admin/translations.php:42
+msgid "Show similar videos"
+msgstr "Показывать похожие видео"
+
+#: admin/translations.php:43
+msgid "Show player controls"
+msgstr "Показывать панель управления"
+
+#: admin/translations.php:44
+msgid "Show video title and action bar"
+msgstr "Показывать заголовок и панель"
+
+#: admin/translations.php:45
+msgid "Paste a link to the video"
+msgstr "Введите ссылку на видео"

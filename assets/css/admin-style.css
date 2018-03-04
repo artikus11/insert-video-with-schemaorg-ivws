@@ -1,0 +1,7 @@
+.mce-window.mce-container.mce-myAwesomeClass-panel .mce-container-body.mce-abs-layout {
+    overflow: hidden !important;
+}
+
+#ui-datepicker-div {
+    z-index: 100102 !important;
+}

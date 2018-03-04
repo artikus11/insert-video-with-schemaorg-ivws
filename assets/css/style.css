@@ -1,0 +1,21 @@
+.art_yt {
+    position: relative;
+    display: block;
+    margin-bottom: 20px
+}
+
+.ivs-left {
+    text-align: left
+}
+
+.ivs-center {
+    text-align: center
+}
+
+.ivs-right {
+    text-align: right
+}
+
+.ivs-none {
+    display: none
+}
