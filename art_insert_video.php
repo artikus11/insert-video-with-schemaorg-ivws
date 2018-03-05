@@ -6,7 +6,7 @@
  * Plugin URI: https://ru.wordpress.org/plugins/insert-video-with-schemaorg-ivws/
  * Description: The plug-in supports a shortcode, with which you can add YouTube videos directly with microschemas by schema.org. The markup is made according to the minimum requirements of Yandex
  * Contributors: artabr
- * Version: 3.0
+ * Version: 3.1
  * Author: Artem Abramovich
  * Author URI: https://wpruse.ru/?p=67
  * Tags: shortcodes, shortcode, youtube shortcode, schema.org, schemaorg, rich snippet video, microdata, rich snippets, richsnippets, schema, schema.org, schema.org itemprop, seo, serp, structured data

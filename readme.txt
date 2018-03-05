@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/artabr
 Tags: shortcodes, shortcode, youtube shortcode, schema.org, schemaorg, rich snippet video, microdata, rich snippets, richsnippets, schema, schema.org, schema.org itemprop, seo, serp, structured data
 Requires at least: 4.0
 Tested up to: 4.9.4
-Stable tag: 3.0
+Stable tag: 3.1
 Requires PHP: 5.6+
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
