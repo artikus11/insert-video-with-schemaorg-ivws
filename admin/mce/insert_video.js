@@ -152,9 +152,11 @@
                     },
                     onsubmit: function( e ) {
                         var videoid = jQuery('input[class*="video-link"]').val();
-                        var matches = videoid.match(/^https:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^https:\/\/youtu\.be\/([^?]+)/i);
+                        var myregexp = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
+                        var matches = videoid.match(myregexp);
                         if (matches) {
                             videoid = matches[1];
+                            //alert(videoid);
                         }
                         if (videoid.match(/^[a-z0-9_-]{11}$/i) === null || videoid.length <= 0) {
                             alert(editor.getLang('art_insert_yt.ivs_video_id_alert'));
