@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: IVS\n"
-"POT-Creation-Date: 2018-02-27 21:38+0400\n"
-"PO-Revision-Date: 2018-02-27 21:39+0400\n"
+"POT-Creation-Date: 2018-03-05 01:05+0400\n"
+"PO-Revision-Date: 2018-03-05 16:43+0400\n"
 "Last-Translator: Абрамович Артем | artabr.ru <artikus.sol@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -26,12 +26,16 @@ msgid "Add video"
 msgstr "Добавить видео"
 
 #: admin/translations.php:12
-msgid "ID video"
-msgstr "ID видео"
+msgid "URL video"
+msgstr "Ссылка на видео"
 
 #: admin/translations.php:13
-msgid "Add video ID. This is the last 11 characters in a link."
-msgstr "Укажите ID видео. Это последние 11 символов в ссылке."
+msgid ""
+"Add a link to the video in the format https://www.youtube.com/watch?"
+"v=Rt0nIManqrQ"
+msgstr ""
+"Добавьте ссылку на видео в формате https://www.youtube.com/watch?"
+"v=HPwH0yS1c44"
 
 #: admin/translations.php:14
 msgid "Width player"
@@ -166,3 +170,9 @@ msgstr "Показывать заголовок и панель"
 #: admin/translations.php:45
 msgid "Paste a link to the video"
 msgstr "Введите ссылку на видео"
+
+#~ msgid "ID video"
+#~ msgstr "ID видео"
+
+#~ msgid "Add video ID. This is the last 11 characters in a link."
+#~ msgstr "Укажите ID видео. Это последние 11 символов в ссылке."
