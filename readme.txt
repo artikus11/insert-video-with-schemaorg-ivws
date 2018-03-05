@@ -56,7 +56,10 @@ Yes
 Yes, it is possible. But this is the functional of another paid plugin
 
 == Changelog ==
-= 3.1.2 =
+= 3.1.4 =
+* Update translates
+
+= 3.1.3 =
 * Update folder languages
 
 = 3.1.2 =
